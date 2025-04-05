@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geri Bildirim | Burgerızm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="headerDiv" class="header">
+    <div onclick="toggle()" class="mobileicon">
+      <img src="/Images/icon.jpg" width="50px" height="50px" alt="menu icon">
+    </div>
+    <div>
+      <img class="headerimg" src="/Images/burgerızm.png" height="120px" alt="Burgerızm logo">
+    </div>
+    <div id="navDiv" class="mobileLinkDisplay">
+      <div class="mobileLink">
+        <a class="headerlink" href="/main/index.html">Anasayfa</a>
+        <a class="headerlink" href="/onlyBurgers/index.html">Burgerler</a>
+        <a class="headerlink" href="/snacks/">Atıştırmalıklar</a>
+        <a class="headerlink" href="/drinks/index.html">İçecekler</a>
+        <a class="headerlink" href="/about/index.html">Hakkımızda</a>
+        <a class="headerlink" href="/feedBack/index.html">Geri Dönüşler</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feedback Form -->
+  <section class="feedback-section">
+    <h2>Bize Geri Bildirim Verin</h2>
+    <p>Lezzet yolculuğumuzu daha da güzelleştirmek için görüşlerinizi bekliyoruz.</p>
+
+    <form class="feedback-form">
+      <label for="name">Adınız:</label>
+      <input type="text" id="name" name="name" placeholder="Adınızı girin" required>
+
+      <label for="email">E-posta:</label>
+      <input type="email" id="email" name="email" placeholder="ornek@mail.com" required>
+
+      <label for="message">Mesajınız:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Geri bildiriminizi yazın..." required></textarea>
+
+      <label for="rating">Puanınız:</label>
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5" required>
+        <label for="star5" title="5 yıldız"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title="4 yıldız"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="3 yıldız"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="2 yıldız"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="1 yıldız"></label>
+      </div>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+ 
+  <footer class="footer">
+    <ul class="footerList">
+      <li><a href="/main/index.html">Anasayfa</a></li>
+      <li><a href="/about/index.html">Hakkımızda</a></li>
+      <li><a href="/feedback.html">İletişim</a></li>
+    </ul>
+    <img src="/Images/burgerızm.png" style="height: 150px;">
+    <ul class="footerList">
+      <li><a href="/onlyBurgers/index.html">Burgerler</a></li>
+      <li><a href="#">Restoranlar</a></li>
+      <li><a href="#">Kariyer</a></li>
+    </ul>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggle() {
+      let x = document.getElementById("navDiv");
+      let y = document.getElementById("headerDiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.height = "auto"
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

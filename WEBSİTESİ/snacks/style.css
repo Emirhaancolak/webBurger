@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(211, 46, 74);
+    height: 80px;
+    align-items: center;
+    padding: 0px 15px;
+}
+.headerimg{
+    margin-top: 20px;
+}
+.headerlink {
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+}
+.mobileicon{
+    display: none;
+}
+.headerlink:hover{
+    background-color:rgb(161, 11, 36); ;
+}
+.navDiv{
+    margin: 20px 20px
+}
+.mainDiv{
+    margin: 50px 0px;
+}
+  .card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: red;
+  }
+
+  .card-description {
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+  }
+  .allcards{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+   .card{
+    margin: 10px 20px;
+   }
+   .mainDiv{
+    display: block;
+   }
+   .footer {
+    align-items: center;
+    height: 150px;
+    display: flex;
+    background-color: rgb(211, 46, 74);
+    color: lightgray;
+    margin-top: 300px;
+    justify-content: space-around;
+}
+
+.footerList {
+    list-style-type: none;
+}
+
+.footerList a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.footerList li {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+   @media screen and (max-width: 600px) {
+    .headerimg {
+        display: none;
+    }
+
+    .mobileicon {
+        display: block;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .banner h3{
+    letter-spacing: 15px;
+    font-size: 30px ;
+    opacity: 90%;
+}
+.bannerDiv {
+    height: 400px;
+}
+
+    .mobileLink {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobileLinkDisplay {
+        display: none;
+    }
+
+    #imgMainDiv {
+        flex-direction: column;
+    }
+
+    .imgDiv {
+        /* width: 100%; */
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footerList {
+        display: flex;
+        padding: 0px;
+    }
+
+    .footerList li {
+        margin: 15px 30px;
+    }
+    .imgResDiv{
+        flex: 100%;
+
+    }
+}
